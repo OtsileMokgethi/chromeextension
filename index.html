@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otsile Mokgethi Extension</title>	 
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	html,body{
+		margin:0;
+		padding: 0;
+		height: 200px;
+		width: 500px;
+		background-image: url('image/otsile-mokgethi.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	h3{
+		font-family: Arial;
+		color: white;
+		font-size: 30px;
+		margin-left: 80px;
+	}
+
+	h4{
+		font-style: italic;
+		font-family: Arial;
+		margin-left: 60px;
+		font-size: 20px;
+	}
+
+	ul{
+		display: flex;
+		position: absolute;
+		top: 100px;
+		left: 40px;
+		text-align: center;
+	}
+
+	ul li{
+		list-style: none;
+	}
+
+	ul li a{
+		width: 60px;
+		height:60px;
+		background:white;
+		text-align: center;
+		line-height: 60px;
+		font-size: 35px; 
+		margin: 0 10px;
+		display: block;
+		border-radius: 50px;
+		position: relative;
+		overflow: hidden;
+		border: 3px solid #fff;
+		z-index: 1;
+	}
+
+	ul li a .fa{
+		position: relative;
+		color: #262626;
+		transition: .5s;
+	}
+
+	ul li a:hover .fa-facebook{
+		color: #3b5999;
+		transform: rotateY(360deg);
+	}
+
+	ul li a:hover .fa-twitter{
+		color: #1da1f2;
+		transform: rotateY(360deg);
+	}
+
+	ul li a:hover .fa-linkedin{
+		color: #007bb5;
+		transform: rotateY(360deg);
+	}
+
+	ul li a:hover .fa-github{
+		color: #767676;
+		transform: rotateY(360deg);
+	}
+
+	ul li a:before{
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: red;
+		transition: .5s;
+		z-index: 2;
+	}
+
+	ul li a:hover:before{
+		top:0;
+	}
+
+</style>
+<body>
+	<h3><i class="fa fa-globe"></i> Otsile Mokgethi: 1.0.0</h3>
+  	<hr>
+	<ul>
+		<li>
+			<a href="https://www.facebook.com/oats.cc/" target="_blank"><i class="fa fa-facebook"></i></a>
+		</li>
+		<li>
+			<a href="https://twitter.com/oatsmokgethi" target="_blank"><i class="fa fa-twitter"></i></a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/otsile-mokgethi" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</li>
+		<li>
+			<a href="https://github.com/OtsileMokgethi" target="_blank"><i class="fa fa-github"></i></a>
+		</li>
+	</ul>
+<script src="popup.js"></script>
+</body>
+</html>
